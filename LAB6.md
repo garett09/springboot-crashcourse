@@ -37,5 +37,5 @@
 | | `POST` | `/api/tickets/validate` | Validate ticket code |
 | **Visitor** | `GET` | `/api/visitors` | Get all visitors |
 | | `GET` | `/api/visitors/{visitorId}` | Get visitor by ID |
-| | `POST`| `/api/visitors/{visitorId}/location` | Update visitor location |
+| | `POST` | `/api/visitors/{visitorId}/location` | Update visitor location |
 | | `DELETE` | `/api/visitors/{visitorId}` | Remove visitor (on exit) |
