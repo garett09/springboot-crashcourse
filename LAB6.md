@@ -13,7 +13,7 @@
 | | `PUT` | `/api/staff/{staffId}` | Update staff member |
 | | `DELETE` | `/api/staff/{staffId}` | Delete staff member |
 | **Handler Actions** | `POST` | `/api/handlers/{handlerId}/feed` | Feed an animal |
-| | `POST` | `/api/handlers/{handlerId}/exercise`| Exercise an animal |
+| | `POST` | `/api/handlers/{handlerId}/exercise` | Exercise an animal |
 | | `POST` | `/api/handlers/{handlerId}/examine` | Examine an animal |
 | **Veterinarian Actions**| `POST` | `/api/veterinarians/{vetId}/heal` | Heal an animal |
 | | `POST` | `/api/veterinarians/{vetId}/lecture` | Start a lecture |
