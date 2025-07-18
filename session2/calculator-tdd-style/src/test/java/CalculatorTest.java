@@ -46,6 +46,36 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    void shouldSubtractTwoIntegers() {
+        int actual = calculator.subtract(15, 5);
+        assertEquals(10, actual);
+    }
+
+    @Test
+    void shouldSubtractTwoLong() {
+        long actual = calculator.subtract(9000000000000000L, 100000000000000L);
+        assertEquals(8900000000000000L, actual);
+    }
+
+    @Test
+    void shouldSubtractTwoShort() {
+        short actual = (short) calculator.subtract(20000, 5000);
+        assertEquals(15000, actual);
+    }
+
+    @Test
+    void shouldSubtractTwoFloat() {
+        float actual = calculator.subtract(1500f, 500f);
+        assertEquals(1000f, actual);
+    }
+
+    @Test
+    void shouldSubtractTwoDouble() {
+        double actual = calculator.subtract(5000d, 1000d);
+        assertEquals(4000d, actual, 0.01);
+    }
+
 
 }
 

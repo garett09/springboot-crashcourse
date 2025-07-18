@@ -20,5 +20,23 @@ public class Calculator {
         return (double)(a+b);
     }
 
+    public int subtract (int a,int b){
+        return a-b;
+    }
+
+    public long subtract (long a,long b){
+        return (long)(a-b);
+    }
+
+    public short subtract (short a,short b){
+        return (short)(a-b);
+    }
+    public float subtract (float a,float b){
+        return (float)(a-b);
+    }
+    public double subtract (double a,double b){
+        return (double)(a-b);
+    }
+
 
 }
