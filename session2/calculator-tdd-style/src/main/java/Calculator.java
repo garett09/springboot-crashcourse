@@ -38,5 +38,21 @@ public class Calculator {
         return (double)(a-b);
     }
 
+    public int multiply (int a,int b){
+        return a*b;
+    }
+    public long multiply (long a,long b){
+        return (long)(a*b);
+    }
+    public short multiply (short a,short b){
+        return (short)(a*b);
+    }
+    public float multiply (float a,float b){
+        return (float)(a*b);
+    }
+    public double multiply (double a,double b){
+        return (double)(a*b);
+    }
+
 
 }

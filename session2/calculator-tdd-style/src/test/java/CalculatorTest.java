@@ -76,6 +76,36 @@ public class CalculatorTest {
         assertEquals(4000d, actual, 0.01);
     }
 
+    @Test
+    void shouldMultiplyTwoIntegers() {
+        int actual = calculator.multiply(5, 10);
+        assertEquals(50, actual);
+    }
+
+    @Test
+    void shouldMultiplyTwoLong() {
+        long actual = calculator.multiply(1000000L, 10000L);
+        assertEquals(10000000000L, actual);
+    }
+
+    @Test
+    void shouldMultiplyTwoShort() {
+        short actual = (short) calculator.multiply(100, 200);
+        assertEquals(20000, actual);
+    }
+
+    @Test
+    void shouldMultiplyTwoFloat() {
+        float actual = calculator.multiply(12.5f, 4f);
+        assertEquals(50f, actual);
+    }
+
+    @Test
+    void shouldMultiplyTwoDouble() {
+        double actual = calculator.multiply(12.5d, 4d);
+        assertEquals(50d, actual, 0.01);
+    }
+
 
 }
 
