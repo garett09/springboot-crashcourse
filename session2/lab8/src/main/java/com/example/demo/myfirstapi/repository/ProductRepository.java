@@ -49,7 +49,7 @@ public class ProductRepository {
             }
         }
         System.out.println("Product with ID " + product.getId() + " not found for update.");
-        return product;
-        }
+        return product; // Or throw new IllegalArgumentException("Product not found for update");
+    }
 }
 
