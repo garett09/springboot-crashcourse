@@ -5,69 +5,47 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
 
+    private Calculator calculator;
+
     @BeforeEach
     void setUp() {
-        Calculator calculator = new Calculator();
-    }
-
-
-
-    @Test
-    void shouldBeTurnedOff() {
-        Calculator calculator = new Calculator();
-        assertFalse(calculator.isOn());
+        calculator = new Calculator();
     }
 
     @Test
-    void shouldBeTurnedOn() {
-        Calculator calculator = new Calculator();
-        calculator.turnOn();
-        assertTrue(calculator.isOn());
-
-}
-
-    @Test
-    void shouldTurnOff(){
-        Calculator calculator = new Calculator();
-        calculator.turnOff();
-        assertFalse(calculator.isOn());
-    }
-    @Test
-    void shouldTurnOffWhenTurnedOn() {
-        Calculator calculator = new Calculator();
-        calculator.turnOn();
-        assertFalse(calculator.isOff());
-        calculator.turnOff();
-        assertTrue(calculator.isOff());
+    void shouldAddTwoIntegers(){
+        int actual = calculator.add(5,10);
+        assertEquals(15,actual);
     }
 
     @Test
-    void shouldCalculateSumWithTwoIntegers() {
-        Calculator calculator = new Calculator();
-        int result = calculator.sum(5, 10);
-        assertEquals(15, result);
+    void shouldAddTwoLong(){
+        long actual = calculator.add(100000000000000L,9000000000000000L);
+        assertEquals(9100000000000000L,actual);
     }
 
     @Test
-    void shouldCalculateQuotientWithTwoFloats() {
-        Calculator calculator = new Calculator();
-        float result = calculator.divide(10.0f, 2.0f);
-        assertEquals(5.0f, result, 0.001);
+    void shouldAddTwoShort(){
+        short actual = (short) calculator.add(5000,10000);
+        assertEquals(15000,actual);
+    }
+
+    @Test
+    void shouldAddTwoFloat(){
+        float actual = calculator.add(1000f,500f);
+        assertEquals(1500f,actual);
+
 
     }
 
     @Test
-    void shouldCalculateDifferenceWithTwoIntegers() {
-        Calculator calculator = new Calculator();
-        int result = calculator.difference(10, 5);
-        assertEquals(5, result);
+    void shouldAddTwoDouble(){
+        double actual= calculator.add(1000d,5000d);
+        assertEquals(6000d,actual,0.01);
+
+
     }
 
-    @Test
-    void shouldCalculateProductWithTwoIntegers() {
-        Calculator calculator = new Calculator();
-        int result = calculator.multiply(5, 10);
-        assertEquals(50, result);
-    }
+
 }
 

@@ -1,35 +1,23 @@
 public class Calculator {
 
-    public boolean status = false;
-    public boolean isOn() {
-        return status; // Placeholder implementation
-    }
-    public void turnOn() {
-        status = true; // Set the calculator to "on"
+    public int add (int a,int b){
+        return a+b;
     }
 
-    public void turnOff() {
-        status = false; // Set the calculator to "off"
+    public long add (long a,long b){
+        return (long)(a+b);
     }
 
-    public boolean isOff(){
-    return !status;
+    public short add (short a,short b){
+        return (short)(a+b);
     }
 
-    public int sum(int a, int b){
-        return a+b; // Returns the sum of two integers
+    public float add (float a,float b){
+        return (float)(a+b);
     }
 
-    public int difference(int a, int b){
-        return a - b; // Returns the difference of two integers
-    }
-
-    public float divide(float a, float b){
-        return a / b; // Returns the quotient of two floats
-    }
-
-    public int multiply(int a, int b) {
-        return a * b; // Returns the product of two integers
+    public double add (double a,double b){
+        return (double)(a+b);
     }
 
 
