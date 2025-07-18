@@ -54,5 +54,21 @@ public class Calculator {
         return (double)(a*b);
     }
 
+    public int divide (int a,int b){
+        return a/b;
+    }
+    public long divide (long a,long b){
+        return (long)(a/b);
+    }
+    public short divide (short a,short b){
+        return (short)(a/b);
+    }
+    public float divide (float a,float b){
+        return (float)(a/b);
+    }
+    public double divide (double a,double b){
+        return (double)(a/b);
+    }
+
 
 }
